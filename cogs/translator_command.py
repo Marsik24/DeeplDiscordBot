@@ -51,7 +51,7 @@ class SendPrivateButton(ui.View):
                 embed.add_field(name="Original Text", value=self.original_text, inline=False)
                 embed.add_field(name="Translated", value=self.text_to_send, inline=False)
                 # Set the footer and timestamp of the embed.
-                embed.set_footer(text="Powered by Marco Melito \nSome languages may not be supported.")
+                embed.set_footer(text="Powered by Marsik24 \nSome languages may not be supported.")
                 embed.timestamp = datetime.datetime.now()
                 # Attempt to send embed in DM to author
                 await self.author.send(embed=embed)
@@ -208,7 +208,7 @@ class TranslatorCommand(commands.Cog):
             embed.add_field(name=f"Translated to {target_language_name}",
                             value=text_translated if text_translated else "Error", inline=False)
             # Set the footer and timestamp of the embed
-            embed.set_footer(text="Powered by Marco Melito \nSome languages may not be supported.",
+            embed.set_footer(text="Powered by Marsik24 \nSome languages may not be supported.",
                              icon_url=self.bot.user.avatar.url if self.bot.user.avatar else None)
             embed.timestamp = datetime.datetime.now()
 
